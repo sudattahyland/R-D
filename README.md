@@ -1,5 +1,21 @@
 # AI-Powered Testing Project - E-Commerce Platform Testing Suite
 
+## 🎯 New Here? Start With These
+
+**📖 Want to understand EVERYTHING that was done?**  
+→ **[IMPLEMENTATION_DETAILS.md](./IMPLEMENTATION_DETAILS.md)** - Complete explanation of all work (1,200+ lines)
+
+**🗺️ Not sure where to start?**  
+→ **[NAVIGATION_GUIDE.md](./NAVIGATION_GUIDE.md)** - Find exactly what you need
+
+**🚀 Want to get started quickly?**  
+→ **[QUICKSTART.md](./QUICKSTART.md)** - 15-minute getting started guide
+
+**📊 Need an executive summary?**  
+→ **[PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)** - High-level overview with metrics
+
+---
+
 ## Overview
 
 This project demonstrates how AI tools and agents can be leveraged for comprehensive testing of a modern e-commerce web application. As an experienced Software Development Engineer in Test (SDET), this sample project showcases various testing points where AI agents can significantly enhance testing efficiency, coverage, and effectiveness.
