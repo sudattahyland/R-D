@@ -95,24 +95,24 @@ await page.click({
 **Implementation**:
 ```javascript
 // Using AI to generate realistic e-commerce test data
-const { Configuration, OpenAIApi } = require('openai');
+const { OpenAI } = require('openai');
 
 async function generateTestCustomers(count, scenario) {
-  const openai = new OpenAIApi(new Configuration({
+  const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
-  }));
+  });
   
   const prompt = `Generate ${count} realistic customer profiles for an e-commerce platform.
   Scenario: ${scenario}
   Include: name, email, shipping address, payment method, purchase history`;
   
-  const response = await openai.createCompletion({
+  const response = await openai.chat.completions.create({
     model: "gpt-4",
-    prompt: prompt,
+    messages: [{ role: "user", content: prompt }],
     max_tokens: 2000
   });
   
-  return JSON.parse(response.data.choices[0].text);
+  return JSON.parse(response.choices[0].message.content);
 }
 
 // Generate diverse test data
